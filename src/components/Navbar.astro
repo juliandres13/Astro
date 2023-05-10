@@ -1,0 +1,39 @@
+<main>
+    <h1 class="text-gradient">Welcome to Astro</h1>
+    <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/support">Support</a></li>
+    </ul>
+</main>
+<style>
+    ul > li {
+        display: inline-flex;
+        margin: 0 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: purple;
+    }
+    main {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>
